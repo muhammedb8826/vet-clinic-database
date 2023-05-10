@@ -7,7 +7,7 @@
 This repository includes files with plain SQL that can be used to recreate a database:
 
 - Use [schema.sql](./schema.sql) to create all tables.
-- Use [data.sql](./data.sql) to populate tables with sample data.
+- Use [data.sqEditing vet-clinic-database/README.md at vet-clinic-db · muhammedb8826/vet-clinic-database · GitHubl](./data.sql) to populate tables with sample data.
 - Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
 
 <a name="readme-top"></a>
@@ -77,7 +77,6 @@ vet clinic database is a database that includes data about animals and allowing 
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -118,7 +117,6 @@ Once psql shell is opened you can use the file schema.sql to create a table and 
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
 
 👤 **Author1**
 
@@ -133,7 +131,6 @@ Once psql shell is opened you can use the file schema.sql to create a table and 
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
 
 - [ ] **[Visualizing data on webpage]**
 
@@ -153,7 +150,6 @@ Feel free to check the [issues page](https://github.com/muhammedb8826/vet-clinic
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
 
 If you like this project, please give it ⭐️!
 
@@ -163,7 +159,6 @@ If you like this project, please give it ⭐️!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
 
 I would like to thank Microverse for teaching me how to code
 
