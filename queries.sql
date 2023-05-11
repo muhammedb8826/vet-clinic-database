@@ -33,7 +33,7 @@ BEGIN;
 DELETE FROM animals WHERE date_of_birth > '2022-01-01';
 SAVEPOINT SAVEPOINT1;
 UPDATE animals SET weight_kg = weight_kg * '-1' ;
-ROLLBACK TO SP1;
+ROLLBACK TO SAVEPOINTP1;
 UPDATE animals SET weight_kg = weight_kg * '-1' WHERE id IN (5,6,7,8);
 COMMIT;
 
