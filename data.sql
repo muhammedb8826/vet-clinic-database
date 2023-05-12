@@ -13,3 +13,12 @@ INSERT INTO animals(name,date_of_birth,weight_kg,neutered,escape_attempts) VALUE
 INSERT INTO animals(name,date_of_birth,weight_kg,neutered,escape_attempts) VALUES ('Boarmon','Jun-7-2005',20.4,TRUE,7);
 INSERT INTO animals(name,date_of_birth,weight_kg,neutered,escape_attempts) VALUES ('Blossom','Oct-13-1998',17,TRUE,3);
 INSERT INTO animals(name,date_of_birth,weight_kg,neutered,escape_attempts) VALUES ('Ditto','May-14-2022',22,TRUE,4);
+
+/* Project 3 */
+
+INSERT INTO owners (full_name,age) VALUES ('Sam Smith', 34);
+INSERT INTO owners (full_name,age) VALUES ('Jennifer Orwell', 19);
+INSERT INTO owners (full_name,age) VALUES ('Bob', 45);
+INSERT INTO owners (full_name,age) VALUES ('Melody Pond', 77);
+INSERT INTO owners (full_name,age) VALUES ('Dean Winchester', 14);
+INSERT INTO owners (full_name,age) VALUES ('Jodie Whittaker', 38);
