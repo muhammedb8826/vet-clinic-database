@@ -25,7 +25,6 @@ CREATE TABLE animals(
 
  CREATE TABLE species(
     id INT GENERATED ALWAYS AS IDENTITY,
-    PRIMARY KEY (animal_id, owner_id),
     name VARCHAR(100),
     PRIMARY KEY (id)
  );
