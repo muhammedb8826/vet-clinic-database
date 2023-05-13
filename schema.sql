@@ -9,4 +9,36 @@ CREATE TABLE animals(
  weight_kg       DECIMAL(5,2),
  PRIMARY KEY (id)
  );
+ 
+/* Project 2 */
+
  ALTER TABLE animals ADD species varchar(255);
+
+ /* Project 3 */
+
+ DROP TABLE IF EXISTS owners;
+
+ CREATE TABLE owners(
+    id INT GENERATED ALWAYS AS IDENTITY,
+    full_name VARCHAR(100),
+    age INT,
+    PRIMARY KEY (id)
+ );
+
+DROP TABLE IF EXISTS species;
+
+ CREATE TABLE species(
+    id INT GENERATED ALWAYS AS IDENTITY,
+    name VARCHAR(100),
+    PRIMARY KEY (id)
+ );
+
+ ALTER TABLE animals DROP COLUMN species;
+
+ ALTER TABLE animals ADD species_id INT;
+
+ ALTER TABLE animals ADD CONSTRAINT fk_species_id FOREIGN KEY (species_id) REFERENCES species(id);
+
+ ALTER TABLE animals ADD owner_id INT;
+
+ ALTER TABLE animals ADD CONSTRAINT fk_owner_id FOREIGN KEY (owner_id) REFERENCES owners(id);
