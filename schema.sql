@@ -61,3 +61,13 @@ DROP TABLE IF EXISTS species;
 	PRIMARY KEY (species_id, vets_id)
 );
  
+
+ CREATE TABLE visits(
+	animals_id INT NOT NULL,
+	vets_id INT NOT NULL,
+  date_of_visit DATE NOT NULL,
+  id INT GENERATED ALWAYS AS IDENTITY,
+	FOREIGN KEY (animals_id) REFERENCES animals (id) ON DELETE RESTRICT ON UPDATE CASCADE,
+	FOREIGN KEY (vets_id) REFERENCES vets (id) ON DELETE RESTRICT ON UPDATE CASCADE,
+  PRIMARY KEY(id)
+);
