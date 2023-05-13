@@ -42,3 +42,14 @@ DROP TABLE IF EXISTS species;
  ALTER TABLE animals ADD owner_id INT;
 
  ALTER TABLE animals ADD CONSTRAINT fk_owner_id FOREIGN KEY (owner_id) REFERENCES owners(id);
+
+ /* project 4 */
+
+ CREATE TABLE vets(
+    id INT GENERATED ALWAYS AS IDENTITY,
+    name VARCHAR(100),
+    age INT,
+    date_of_graduation DATE,
+    PRIMARY KEY (id)
+ );
+ 
