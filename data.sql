@@ -44,5 +44,29 @@ INSERT INTO vets (name, age, date_of_graduation) VALUES ('Jack Harkness', 38, 'J
 
 INSERT INTO specializations (species_id, vets_id) VALUES (1, 2);
 INSERT INTO specializations (species_id, vets_id) VALUES (1, 4);
-INSERT INTO specializations (species_id, vets_id) VALUES (2, 5);
+INSERT INTO specializations (species_id, vets_id) VALUES (2, 4);
 
+BEGIN;
+
+INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (1, 1, 'May-24-2020');
+INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (1, 3, 'Jul-22-2020');
+INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (2, 4, 'Feb-02-2021');
+INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (3, 2, 'Jan-05-2020');
+INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (3, 2, 'Mar-08-2020');
+INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (3, 2, 'May-14-2020');
+INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (4, 3, 'May-04-2021');
+INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (5, 4, 'Feb-24-2021');
+INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (6, 2, 'Dec-21-2019');
+INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (6, 1, 'Aug-10-2020');
+INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (6, 2, 'Apr-07-2021');
+INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (7, 3, 'Sep-29-2019');
+INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (8, 4, 'Oct-03-2020');
+INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (8, 4, 'Nov-04-2020');
+INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (9, 2, 'Jan-24-2019');
+INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (9, 2, 'May-15-2019');
+INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (9, 2, 'Feb-27-2020');
+INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (9, 2, 'Aug-03-2020');
+INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (10, 3, 'May-24-2020');
+INSERT INTO visits (animals_id, vets_id, date_of_visit) VALUES (10, 1, 'Jan-11-2021');
+
+COMMIT;
