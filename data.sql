@@ -41,3 +41,8 @@ INSERT INTO vets (name, age, date_of_graduation) VALUES ('William Tatcher', 45, 
 INSERT INTO vets (name, age, date_of_graduation) VALUES ('Maisy Smith', 26, 'Jan-17-2019');
 INSERT INTO vets (name, age, date_of_graduation) VALUES ('Stephanie Mendez', 64, 'May-04-1981');
 INSERT INTO vets (name, age, date_of_graduation) VALUES ('Jack Harkness', 38, 'Jun-08-2008');
+
+INSERT INTO specializations (species_id, vets_id) VALUES (1, 2);
+INSERT INTO specializations (species_id, vets_id) VALUES (1, 4);
+INSERT INTO specializations (species_id, vets_id) VALUES (2, 5);
+
