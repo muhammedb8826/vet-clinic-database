@@ -11,7 +11,7 @@ CREATE TABLE patients(
  id              INT GENERATED ALWAYS AS IDENTITY,
  admitted_at     TIMESTAMP,
  patient_id      INT,
- status          VARCHAR(100)
+ status          VARCHAR(100),
  PRIMARY KEY (id)
  );
 
@@ -40,3 +40,26 @@ CREATE TABLE treatments(
  name            VARCHAR(50),
  PRIMARY KEY (id)
  );
+
+
+ALTER TABLE medical_histories ADD CONSTRAINT 
+fk_patient_id FOREIGN KEY (patient_id)
+REFERENCES patients(id);
+
+ALTER TABLE invoices ADD CONSTRAINT 
+fk_medical_history_id FOREIGN KEY (medical_history_id)
+REFERENCES medical_histories(id);
+
+ALTER TABLE invoice_items ADD CONSTRAINT 
+fk_invoice_id FOREIGN KEY (invoice_id)
+REFERENCES invoices(id);
+
+ALTER TABLE invoice_items ADD CONSTRAINT 
+fk_treatment_id FOREIGN KEY (treatment_id)
+REFERENCES treatments(id);
+
+CREATE TABLE IF NOT EXISTS medical_treatments (
+    medical_history_id INT REFERENCES medical_histories(id),
+    treatment_id INT REFERENCES treatments(id),
+    PRIMARY KEY (medical_history_id,treatment_id)
+)
