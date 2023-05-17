@@ -45,18 +45,22 @@ CREATE TABLE treatments(
 ALTER TABLE medical_histories ADD CONSTRAINT 
 fk_patient_id FOREIGN KEY (patient_id)
 REFERENCES patients(id);
+CREATE INDEX idx_patient_id ON medical_histories(patient_id)
 
 ALTER TABLE invoices ADD CONSTRAINT 
 fk_medical_history_id FOREIGN KEY (medical_history_id)
 REFERENCES medical_histories(id);
+CREATE INDEX idx_medical_history_id ON invoices(medical_history_id)
 
 ALTER TABLE invoice_items ADD CONSTRAINT 
 fk_invoice_id FOREIGN KEY (invoice_id)
 REFERENCES invoices(id);
+CREATE INDEX idx_invoice_id ON invoice_items(invoice_id)
 
 ALTER TABLE invoice_items ADD CONSTRAINT 
 fk_treatment_id FOREIGN KEY (treatment_id)
 REFERENCES treatments(id);
+CREATE INDEX idx_treatment_id ON invoice_items(treatment_id)
 
 CREATE TABLE IF NOT EXISTS medical_treatments (
     medical_history_id INT REFERENCES medical_histories(id),
