@@ -1,7 +1,5 @@
 # Muhammed B | vet-clinic Database Project
 
-
-
 ## Getting Started
 
 This repository includes files with plain SQL that can be used to recreate a database:
@@ -11,7 +9,6 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
 
 <a name="readme-top"></a>
-
 
 # 📗 Table of Contents
 
@@ -77,7 +74,6 @@ vet clinic database is a database that includes data about animals and allowing 
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
@@ -100,6 +96,7 @@ Clone this repository to your desired folder:
 Install this project with:
 
 on your local machine got to your psql shell and use the following file inside repository
+
 - schema.sql
 - data.sql
 
@@ -109,14 +106,11 @@ To run the project, execute the following command:
 
 Once psql shell is opened you can use the file schema.sql to create a table and database
 
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-
 
 👤 **Author1**
 
@@ -124,13 +118,17 @@ Once psql shell is opened you can use the file schema.sql to create a table and 
 - Twitter: [@twitter](https://twitter.com/muhammedb8826)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/muhammedb8826)
 
+👤 **Bahir Hakimi**
+
+- [<img src="https://i.stack.imgur.com/gVE0j.png" width='20'/> LinkedIn](https://www.linkedin.com/in/bahir-hakimy)
+- [<img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" width='20'/> Email](mailto:bahirhakimy2015@gmail.com)
+- [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png" width='20'/> Twitter](https://twitter.com/bahir_hakimy)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
 
 - [ ] **[Visualizing data on webpage]**
 
@@ -150,7 +148,6 @@ Feel free to check the [issues page](https://github.com/muhammedb8826/vet-clinic
 
 ## ⭐️ Show your support <a name="support"></a>
 
-
 If you like this project, please give it ⭐️!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -158,7 +155,6 @@ If you like this project, please give it ⭐️!
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
 
 I would like to thank Microverse for teaching me how to code
 
